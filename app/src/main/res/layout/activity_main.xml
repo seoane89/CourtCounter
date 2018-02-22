@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/court_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.example.android.courtcounter.MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/teamALayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/team_a_name"
+                style="@style/text_style"
+                android:hint="Team A" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/score_text_style"
+                android:text="0" />
+
+            <Button
+                style="@style/button_style"
+                android:onClick="three_points_a"
+                android:text="@string/three_points" />
+
+            <Button
+                style="@style/button_style"
+                android:onClick="two_points_a"
+                android:text="@string/two_points" />
+
+            <Button
+                style="@style/button_style"
+                android:onClick="one_point_a"
+                android:text="@string/free_throw" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+
+
+            />
+
+        <LinearLayout
+            android:id="@+id/teamBLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/team_b_name"
+                style="@style/text_style"
+                android:hint="Team B" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/score_text_style"
+                android:text="0"
+
+                />
+
+            <Button
+                style="@style/button_style"
+                android:onClick="three_points_b"
+                android:text="@string/three_points" />
+
+            <Button
+                style="@style/button_style"
+                android:onClick="two_points_b"
+                android:text="@string/two_points" />
+
+            <Button
+                style="@style/button_style"
+                android:onClick="one_point_b"
+                android:text="@string/free_throw" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_button"
+        style="@style/reset_button_style"
+        android:onClick="resetScore"
+        android:text="@string/reset" />
+</RelativeLayout>
