@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
         if (scoreTeamA >= 21) {
-            Toast.makeText(getApplicationContext(), "Congratulations " + teamAName + " You win this 21 points challenge!" ,
+            Toast.makeText(getApplicationContext(), getString(R.string.congrats_text) + teamAName + getString(R.string.win_text) ,
                     Toast.LENGTH_LONG).show();
         }
             }
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
         if (scoreTeamB >= 21) {
-            Toast.makeText(getApplicationContext(), "Congratulations " + teamBName + " You win this 21 points challenge!" ,
+            Toast.makeText(getApplicationContext(), getString(R.string.congrats_text) + teamBName + getString(R.string.win_text) ,
                     Toast.LENGTH_LONG).show();
         }
     }

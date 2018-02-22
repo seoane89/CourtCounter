@@ -4,4 +4,6 @@
     <string name="two_points">+2 points</string>
     <string name="free_throw">free throw</string>
     <string name="reset">Reset</string>
+    <string name="congrats_text">Congratulations</string>
+    <string name="win_text">You win this 21 points challenge!</string>
 </resources>
